@@ -1,4 +1,37 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #292323;
+}
+
 .main {
   margin: 20px;
-  font-family: Roboto;
+  font-family: 'Grand Hotel', cursive;
+  color: #FF5757;
+}
+.nav-logo {
+  width: 25%;
+}
+.search-input {
+  font-family: 'Montserrat', sans-serif;
+  color: #FF5757 !important;
+  border: 1px solid #292323 !important;
+}
+.search-input::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  color: #FF5757 !important;
+}
+.search-button {
+  border: 1px solid #FF5757 !important;
+  background-color: #292323 !important;
+  margin: 5px 0px 0px 0px;
+  box-shadow: #292323 !important;
+  outline: #292323;
+}
+
+.search-button:active {
+  border: 1px solid #292323 !important;
+  background-color: #FF5757 !important;
+  margin: 5px 0px 0px 0px;
+  box-shadow: #FF5757 !important;
+  outline: #FF5757;
 }

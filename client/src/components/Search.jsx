@@ -6,8 +6,8 @@ import Button from 'react-bootstrap/Button';
 const Search = () => {
   return (
     <Form inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-info">Search</Button>
+      <FormControl type="text" placeholder="Search" className="search-input" />
+      <Button className="search-button">Search</Button>
     </Form>
   )
 }

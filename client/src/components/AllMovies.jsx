@@ -1,26 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 import Table from 'react-bootstrap/Table';
 import Film from './Movie.jsx';
 
-const AllMovies = () => {
-  const movies = [
-    { title: 'Mean Girls' },
-    { title: 'Hackers' },
-    { title: 'The Grey' },
-    { title: 'Sunshine' },
-    { title: 'Ex Machina' },
-  ];
+const AllMovies = (allFilms) => {
+
   return (
       <Table striped bordered hover>
         <thead>
-          <tr>
+          <tr className="film-list-header">
             <th>Movie Name</th>
           </tr>
         </thead>
         <tbody>
           {
-            movies.map((film) => (
+            allFilms.map((film) => (
               <Film film={film} />
             ))
             }
@@ -28,5 +23,9 @@ const AllMovies = () => {
       </Table>
   );
 };
+
+AllMovies.propTypes = {
+  allFilms: PropTypes.array.isRequired,
+}
 
 export default AllMovies;

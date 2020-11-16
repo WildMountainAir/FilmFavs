@@ -8,7 +8,14 @@ const App = () => {
   // searchInput will hold the state of the Search Component
   // setSearch will be passed as props to NavMain which will pass to Search
   const [searchInput, setSearch] = useState('');
-  const [allFilms, setAllFilms] = useState([]);
+  
+  const [allFilms, setAllFilms] = useState([
+    { title: 'Mean Girls' },
+    { title: 'Hackers' },
+    { title: 'The Grey' },
+    { title: 'Sunshine' },
+    { title: 'Ex Machina' },
+  ]);
   const [searchResults, setResults] = useState([]);
 
   console.log('hello');
@@ -19,7 +26,7 @@ const App = () => {
         setResults={setResults}
         searchInput={searchInput}
       />
-      <AllMovies />
+      <AllMovies allFilms={allFilms}/>
     </Container>
   );
 };

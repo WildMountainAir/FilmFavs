@@ -9,10 +9,9 @@ body {
   color: #FF5757;
 }
 .nav-logo {
-  width: 25%;
+  width: 45%;
 }
 .search-input {
-  font-family: 'Montserrat', sans-serif;
   color: #FF5757 !important;
   border: 1px solid #292323 !important;
 }
@@ -21,17 +20,23 @@ body {
   color: #FF5757 !important;
 }
 .search-button {
+  font-family: 'Montserrat', sans-serif;
   border: 1px solid #FF5757 !important;
   background-color: #292323 !important;
   margin: 5px 0px 0px 0px;
   box-shadow: #292323 !important;
   outline: #292323;
+  width: auto;
 }
-
 .search-button:active {
   border: 1px solid #292323 !important;
   background-color: #FF5757 !important;
-  margin: 5px 0px 0px 0px;
   box-shadow: #FF5757 !important;
   outline: #FF5757;
+}
+.film-list-header {
+  font-size: x-large;
+}
+.film-list-film {
+  font-size: large;
 }

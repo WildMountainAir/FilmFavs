@@ -1,10 +1,11 @@
 /* eslint-disable no-console */
 import React from 'react';
+import PropTypes from 'prop-types';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Search from './Search.jsx';
 
-const NavMain = () => {
+const NavMain = (setSearch, setResults, searchInput) => {
   console.log('nav');
   return (
     <Navbar>
@@ -16,9 +17,17 @@ const NavMain = () => {
         <Nav.Link href="#features">Features</Nav.Link>
         <Nav.Link href="#pricing">Pricing</Nav.Link> */}
       {/* </Nav> */}
-      <Search />
+      <Search 
+        setSearch={setSearch}
+      />
     </Navbar>
   );
 };
+
+NavMain.propTypes = {
+  setSearch: PropTypes.func.isRequired,
+  setResults: PropTypes.func.isRequired,
+  searchInput: PropTypes.string.isRequired,
+}
 
 export default NavMain;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Film = ({ film }) => (
-  <tr>
+  <tr classNmae="film-list-film">
     <td>{film.title}</td>
   </tr>
 );

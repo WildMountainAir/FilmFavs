@@ -21,3 +21,5 @@ Save your favorite films, add new ones to a To Watch List, and search films.
 <li> User ratings
 <li> Sort film list
 <li> Search by Director or Actor
+<li> Sign Up
+<li> Sign In

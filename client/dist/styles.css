@@ -14,6 +14,7 @@ body {
 .search-input {
   color: #FF5757 !important;
   border: 1px solid #292323 !important;
+  width: 120px;
 }
 .search-input::placeholder {
   font-family: 'Montserrat', sans-serif;

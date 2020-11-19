@@ -99,7 +99,7 @@ class App extends React.Component {
     return(
     <div className="main">
       <NavMain />
-        <Col className="film-list">
+        <Col>
         <div>
           <h2>< Search 
             searchHandler={this.searchHandler} 
@@ -108,11 +108,11 @@ class App extends React.Component {
         </div>
         <div> 
           <h2><AllFilms 
-          movies={this.state.displayedMovies} 
-          watchHandler={this.watchHandler}
-          displayUnwatched={this.displayUnwatched}
-          displayWatched={this.displayWatched}
-          displayAll={this.displayAll}
+            movies={this.state.displayedMovies} 
+            watchHandler={this.watchHandler}
+            displayUnwatched={this.displayUnwatched}
+            displayWatched={this.displayWatched}
+            displayAll={this.displayAll}
           /></h2>
         </div>
       </Col>

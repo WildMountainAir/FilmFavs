@@ -2,7 +2,7 @@ body {
   background-color: #f3f3f3;
 }
 .main {
-  margin: 5%;
+  margin: 10px;
   font-family: 'Grand Hotel', cursive;
   color: #FF5757;
   background-color: #f3f3f3;
@@ -10,34 +10,47 @@ body {
 .nav-logo {
   width: 100%;
 }
+/*******************************
+ *************Search************
+ *******************************/
+.search-root {
+  justify-content: center;
+  display: inline;
+  margin-bottom: 10px;
+}
 .search-input {
-  font-size: x-large;
+  font-size: 2.5vw;
   color: #FF5757;
   border: 1px solid #292323;
-  width: 60%;
+  width: 50%;
   padding: 10px 20px;
-  height: 50px;
-  margin: 5px;
+  height: 60px;
   border-radius: 10px;
+  text-align: center;
+  margin: 0px 10px;
 }
 .search-input::placeholder {
   font-family: 'Montserrat', sans-serif;
   color: #FF5757;
 }
+/*******************************
+ ************Buttons************
+ *******************************/
 .button-root {
   font-family: 'Montserrat', sans-serif;
   margin: 5px;
   color: #f3f3f3;
   border-radius: 10px;
   padding: 5px 10px;
-  font-size: large;
+  font-size: 2vw;
+  display: inline;
 }
 .search-button {
   border: 1px solid #FF5757;
   background-color: #292323;
   box-shadow: none;
   outline: none;
-  width: 100px;
+  width: 15%;
   height: 50px;
 }
 .search-button:active {
@@ -51,7 +64,7 @@ body {
   background-color: #292323;
   box-shadow: none;
   outline: none;
-  width: 100px;
+  width: 15%;
   height: 50px;
 }
 .add-button:active {
@@ -65,9 +78,8 @@ body {
   background-color: #292323;
   box-shadow: none;
   outline: none;
-  width: medium;
+  width: 25%;
   height: 50px;
-  margin-left: 20px;
 }
 .unwatched-button:active {
   border: 1px solid #292323;
@@ -80,7 +92,8 @@ body {
   background-color: #292323;
   box-shadow: none;
   outline: none;
-  width: medium;
+  margin-left: 20px;
+  width: 25%;
   height: 50px;
 }
 .watched-button:active {
@@ -94,7 +107,8 @@ body {
   background-color: #292323;
   box-shadow: none;
   outline: none;
-  width: medium;
+  margin-left: 20px;
+  width: 25%;
   height: 50px;
 }
 .all-button:active {
@@ -103,12 +117,17 @@ body {
   box-shadow: none;
   outline: none;
 }
+/*******************************
+ **************Films************
+ *******************************/
 .film-list {
-  width: 100%;
+  justify-content: center;
+  border: 1px solid #FF5757;
+  border-radius: 10px;
 }
 .film-list-header {
-  font-size: x-large;
+  font-size: 2vw;
 }
 .film-list-film {
-  font-size: large;
+  font-size: 1vw;
 }

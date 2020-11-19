@@ -2,8 +2,14 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 
 var Search = (props) => (
-    <Row className="search">
-      <input id="formInput" className="search-input" type="text" maxLength="80" placeholder="Search For or Add A Movie"/>
+    <Row className="search-root">
+      <input
+        id="formInput"
+        className="search-input"
+        type="text"
+        maxLength="80"
+        placeholder="Search or Add A Film Fav"
+      />
       <button 
         className='button-root search-button'
         onClick={

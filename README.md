@@ -8,13 +8,13 @@ Save your favorite films, add new ones to a To Watch List, and search films.
 
 ## Current Features
 <li> View list of hard coded films
-
-## Future Features
 <li> Search for a film
 <li> Add a film
 <li> View user added films
-<li> Mark films as watched
 <li> Add films to a to watch list
+<li> Mark films as unwatched
+
+## Future Features
 <li> View detailed film information
 <li> Toggle films as watched within the detailed information
 <li> View films from The Movie DB

@@ -31,10 +31,17 @@ var AllFilms = (props) => (
           props.displayAll()}
         }
       >
-        View All Films
+        All Films
       </button>
     </Row>
-    {props.movies.map((movie, i) => (<Film watchHandler={props.watchHandler} movie={movie} key={i} />))}
+    {
+      props.movies.map((movie, i) => (
+        <Film
+        watchHandler={props.watchHandler}
+        movie={movie} key={i}
+        />
+      ))
+    }
   </div>
 )
 

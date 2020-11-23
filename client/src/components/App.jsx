@@ -12,7 +12,8 @@ class App extends React.Component {
       movies: [],
       displayedMovies: [],
       watchedMovies: [],
-      unwatchedMovies: []
+      unwatchedMovies: [],
+      movieInfo: []
     }
     this.searchHandler = this.searchHandler.bind(this);
     this.addHandler = this.addHandler.bind(this);
@@ -82,7 +83,8 @@ class App extends React.Component {
   }
 
   displayInformation() {
-
+    // displays information of films
+    this.setState({movieInfo: 'movie information'});
   }
 
   displayUnwatched() {

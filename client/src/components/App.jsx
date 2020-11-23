@@ -20,6 +20,7 @@ class App extends React.Component {
     this.displayUnwatched = this.displayUnwatched.bind(this);
     this.displayWatched = this.displayWatched.bind(this);
     this.displayAll = this.displayAll.bind(this);
+    this.displayInformation = this.displayInformation.bind(this);
   }
 
   componentDidMount() {
@@ -80,6 +81,10 @@ class App extends React.Component {
     this.setState({movies:myMovies, watchedMovies:watchedMov, unwatchedMovies:unwatchedMov});
   }
 
+  displayInformation() {
+
+  }
+
   displayUnwatched() {
     // displays unwatched movies
     this.setState({displayedMovies:this.state.unwatchedMovies});
@@ -113,6 +118,7 @@ class App extends React.Component {
             displayUnwatched={this.displayUnwatched}
             displayWatched={this.displayWatched}
             displayAll={this.displayAll}
+            displayInformation={this.displayInformation}
           /></h2>
         </div>
       </Col>

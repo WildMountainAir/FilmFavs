@@ -30,7 +30,7 @@ class App extends React.Component {
     // i: string
     // action: use input string, filter through movies with input
     // ec: casing
-    var noMovie = [{title: '🙈 Oops! No Results Found.'}];
+    // var noMovie = [{title: '🙈 Oops! No Results Found.'}];
     var filteredMovies = this.state.movies.filter( (movie) => {
       var inputStr = string.toLowerCase();
       var currentTitle = movie.title.toLowerCase();
@@ -39,7 +39,7 @@ class App extends React.Component {
     if (filteredMovies.length > 0) {
       this.setState({displayedMovies:filteredMovies});
     } else {
-      this.setState({displayedMovies:noMovie})
+    <img src="https://film-favs.s3.us-east-2.amazonaws.com/TryAgain.gif" alt="no results" width="70%"/>
     }
   }
 

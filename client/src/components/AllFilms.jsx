@@ -39,6 +39,7 @@ var AllFilms = (props) => (
         <Film
         watchHandler={props.watchHandler}
         displayInfo={props.displayInfo}
+        toDisplayInfo={props.toDisplayInfo}
         movie={movie} key={i}
         />
       ))

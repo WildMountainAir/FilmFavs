@@ -38,7 +38,7 @@ var AllFilms = (props) => (
       props.movies.map((movie, i) => (
         <Film
         watchHandler={props.watchHandler}
-        displayInformation={props.displayInformation}
+        displayInfo={props.displayInfo}
         movie={movie} key={i}
         />
       ))

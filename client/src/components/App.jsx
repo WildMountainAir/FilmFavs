@@ -32,7 +32,7 @@ class App extends React.Component {
     // i: string
     // action: use input string, filter through movies with input
     // ec: casing
-    // var noMovie = [{title: '🙈 Oops! No Results Found.'}];
+    var noFilm = [{title: '🙈 Oops! No Results Found.'}];
     var filteredMovies = this.state.movies.filter( (movie) => {
       var inputStr = string.toLowerCase();
       var currentTitle = movie.title.toLowerCase();
@@ -41,7 +41,7 @@ class App extends React.Component {
     if (filteredMovies.length > 0) {
       this.setState({displayedMovies:filteredMovies});
     } else {
-    <img src="https://film-favs.s3.us-east-2.amazonaws.com/TryAgain.gif" alt="no results" width="70%"/>
+      this.setState({displayedMovies: noFilm});
     }
   }
 
@@ -82,7 +82,7 @@ class App extends React.Component {
     this.setState({movies:myMovies, watchedMovies:watchedMov, unwatchedMovies:unwatchedMov});
   }
 
-  displayInformation() {
+  displayInfo() {
     // displays information of films
     this.setState({movieInfo: 'movie information'});
   }
@@ -120,7 +120,7 @@ class App extends React.Component {
             displayUnwatched={this.displayUnwatched}
             displayWatched={this.displayWatched}
             displayAll={this.displayAll}
-            displayInformation={this.displayInformation}
+            displayInfo={this.displayInfo}
           /></h2>
         </div>
       </Col>
